@@ -1,0 +1,27 @@
+public class Main {
+public static void main(String [] args) {
+
+//dersleri tanımlıyoruz. 
+  int mat , fizik , kimya , turkce , tarih , muzik ;
+
+  Scanner int = new Scanner(System.in);
+//kullanıcıdan değerleri alıyoruz. 
+  System.out.println("Matematik Notunuzu giriniz: ") ;
+  mat = int.nextInt() ;
+  System.out.println("Fizik Notunuzu giriniz: ") ;
+  fizik = int.nextInt() ;
+  System.out.println("Kimya Notunuzu giriniz: ") ;
+  kimya = int.nextInt() ;
+  System.out.println("Türkçe Notunuzu giriniz: ") ;
+  turkce = int.nextInt() ;
+  System.out.println("Tarih Notunuzu giriniz: ") ;
+  tarih = int.nextInt() ;
+  System.out.println("Müzik Notunuzu giriniz: ") ;
+  muzik = int.nextInt() ;
+
+  int toplam = ( mat + fizik + kimya + turkce + tarih + muzik ) ;
+  double sonuc = toplam / 6 ;
+  System.out.println( " Ortalamanız: " + sonuc) ;
+
+}
+}
